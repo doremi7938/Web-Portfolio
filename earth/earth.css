@@ -1,0 +1,81 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#universe{
+    background: black;
+    background: radial-gradient(#555,#000);
+}
+#stars{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(image/star.png);
+    z-index: 2;
+    animation: starspulse 3s infinite alternate;
+}
+@keyframes starspulse{
+    from{opacity: 1;}
+    to{opacity: 0.3;}
+}
+#sun{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: hsla(30,100%,50%,1);
+    background:radial-gradient(#FFA488,#FF5511);
+    border-radius: 100px; 
+    box-shadow: 0 0 50px #FFC8B4;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    z-index: 3;
+    animation: sunfire 1s infinite alternate;
+}
+@keyframes sunfire{
+    from{ box-shadow: 0 0 50px #FFC8B4;}
+    to{ box-shadow: 0 0 100px #FFC8B4;}
+}
+#earthO{
+    width: 500px;
+    height: 600px;
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -250px; 
+    border-radius: 50%;
+    animation: spin 15s linear infinite;
+}
+@keyframes spin{
+    from{ transform:rotate(0);}
+    to{ transform:rotate(360deg);}
+}
+#earth{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+    animation: spin 5s linear infinite;
+}
+#moonO{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -60px;
+    margin-left: -20px;
+    z-index: 5;
+    border-radius: 50%;
+    animation: spin 4s linear infinite;
+}
+#moon{
+    width: 30px;
+    height: 30px;
+    background: #888888;
+    background: radial-gradient(#DDDDDD,#888888);
+    border-radius: 50%;
+}
