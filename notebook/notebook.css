@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapbig{
+    background-image: url(bg.jpg);
+    position: relative;
+    background-size: 100% 100%;
+    font-family: '微軟正黑體';
+}
+.wrap{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    width: 800px;
+    height: 600px;
+    background-color: hsla(120,0%,100%,0.7);
+    
+}
+.wrap h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    color: forestgreen;
+}
+.textbtn{
+    text-align: center;
+}
+.textbtn .textclass{
+    border: 2px solid gray;
+    padding: 10px;
+}
+.textbtn .btn{
+    border: 2px solid black;
+    padding: 9px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+.wrap .list{
+    text-align: center;
+    list-style: none;
+    padding-top: 50px;
+    font-weight: bold;
+}
+.wrap .list li{
+    text-align: left;
+    margin-left: 300px;
+}
+.wrap .list a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: brown;
+}
+
